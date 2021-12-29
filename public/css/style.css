@@ -1,0 +1,46 @@
+body {
+    color: #333333;
+    font-family: Arial;
+    max-width: 800px;
+    margin: 40px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+img {
+    width: 300px;
+    height: 250px;
+    float: left;
+    padding-top: 3px;
+}
+
+h1#title {
+    font-size: 68px;
+    margin-bottom: 15px;
+}
+
+#subtitle,
+p {
+    font-size: 25px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
+    padding: auto;
+    font-size: 20px;
+    margin: 1px;
+    /* width: 100px; */
+}
+
+.btn btn-lg btn-info btn-block {
+    color: #3868cd;
+}

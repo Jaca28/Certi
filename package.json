@@ -1,0 +1,23 @@
+{
+  "name": "metamask-connection",
+  "version": "1.0.0",
+  "description": "Connecting dapp with metamask using ethers.js library",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config src/app.js dotenv_config_path=config/dev.env",
+    "start": "node src/app.js"
+  },
+  "keywords": [],
+  "author": "Jugal Kamdar",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "web3": "^1.6.0",
+    "web3-eth": "^1.6.0"
+  }
+}

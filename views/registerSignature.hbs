@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Register Signature</title>
+    <script src="/vendor/jquery-3.2.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/plug-ins/1.10.20/i18n/Spanish.json"></script>
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/plug-ins/1.10.11/sorting/date-eu.js"></script>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+</head>
+<body>
+    <a id = "downloadAnchorElem" style = "display: none" ></a>
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <div class="header-mobile-inner">
+                        <a class="logo" href="/index.hbs">
+                            <img src="images/icon/logo.png" height="1" width="1" alt="Certi" />
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li>
+                            <a href="/registerSignature.hbs">
+                                <i class="fas fa-user"></i>Register Signature</a>
+                        </li>
+                         <li>
+                            <a href="/rechargeSignature.hbs">
+                                <i class="fas fa-copy"></i>Recharge Signature</a>
+                        </li>
+                        <li>
+                            <a href="/signDocument.hbs">
+                                <i class="fas fa-edit"></i>Sign Document</a>
+                        </li>
+                        <li>
+                            <a href="/index.hbs">
+                                <i class="far fa-check-square"></i>Validate Document</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="/index.hbs">
+                    <img src="/images/icon/logo.png" alt="Cool Admin" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li>
+                            <a href="/registerSignature.hbs">
+                                <i class="fas fa-user"></i>Register Signature</a>
+                        </li>
+                         <li>
+                            <a href="/rechargeSignature.hbs">
+                                <i class="fas fa-copy"></i>Recharge Signature</a>
+                        </li>
+                        <li>
+                            <a href="/signDocument.hbs">
+                                <i class="fas fa-edit"></i>Sign Document</a>
+                        </li>
+                        <li>
+                            <a href="/index.hbs">
+                                <i class="far fa-check-square"></i>Validate Document</a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <form class="form-header" action="" method="POST">
+                                <input class="au-input au-input--xl" type="text" name="search" placeholder="Validate by hash...Soon" />
+                                <button class="au-btn--submit" type="submit">
+                                    <i class="zmdi zmdi-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="title-1 m-b-25" align="center">Register Signature</h2>
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="card-header">Enter the data to register your signature</div>
+                                        <div class="card-body card-block">
+                                            <form action="" method="post" class="has-success form-group">
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input type="text" id="name" name="name" placeholder="Name/DBA" class="form-control">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-user"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input type="text" id="identification" name="identification" placeholder="Document/EIN" class="form-control">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-briefcase"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <input type="email" id="email" name="email" placeholder="Email" class="form-control">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-envelope"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="form-actions form-group" id="container">
+                                                    <input type="button" class="btn btn-outline-primary btn-sm" value="Register" id="signButton">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sufee-alert alert with-close alert-success alert-dismissible fade show" id="alert_billetera" style="display:none;">
+                                <span class="badge badge-pill badge-success">Transacción Exito</span>
+                                Su firma criptografíca fue creada exitosamente
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                        </div>
+
+                        <div class="alert alert-danger" role="alert" id="alert_email" style="display:none;">
+                                Porfavor ingrese un correo valido
+                        </div>
+
+                        <div class="alert alert-danger" role="alert" id="alert_form" style="display:none;">
+                                Porfavor llene los campos vacios
+                        </div>
+
+                        <div class="alert alert-danger" role="alert" id="alert_pass" style="display:none;">
+                                Las contraseñas no coinciden
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    <p>Copyright © 2018 Certi.io. All rights reserved.</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+            <div id="container"></div>
+            <!-- END PAGE CONTAINER-->
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="https://unpkg.com/sweetalert2@7.8.2/dist/sweetalert2.all.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+    <script src="js/contractData.js"></script>
+    <script type="module" src="js/registrarFirma.js"></script>
+    <script src="js/nueva_billetera.js"></script>
+    <script src="bundle.js"></script>
+    <script src="js/validar_formulario_firma.js"></script>
+    <script type="module" src="/js/ethers-5.1.esm.min.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
