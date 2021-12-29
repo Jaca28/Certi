@@ -1,4 +1,4 @@
-# Certi Dapp <img src='public/images/icon/logo.png' width=60px height=60px>
+# <img src='public/images/icon/logo.png' width=80px height=80px>
 
 Use the Celo Blockchain as a digital signature to authenticate documents, anyone with the original document can validate it and add its signature. Just connect to our D-app and be your own notary. [break changes](https://docs.metamask.io/guide/provider-migration.html#table-of-contents) in metamask provier API in January of 2021.
 
