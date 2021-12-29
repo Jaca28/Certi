@@ -1,4 +1,4 @@
-# Certi Dapp <img src='public/images/icon/logo.png' width=30px height=30px>
+# Certi Dapp <img src='public/images/icon/logo.png' width=60px height=60px>
 
 A simple project to show the metamask wallet connection with your dapp after [break changes](https://docs.metamask.io/guide/provider-migration.html#table-of-contents) in metamask provier API in January of 2021.
 
