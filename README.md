@@ -1,5 +1,5 @@
 # Certi Dapp <img src='https://cdn.freebiesupply.com/logos/large/2x/metamask-logo-png-transparent.png' width=30px height=30px>
-
+<img src='https://miro.medium.com/max/1326/1*pSoODqg9-PXWnnEXm--FyA.gif' width=30px height=30px>
 A simple project to show the metamask wallet connection with your dapp after [break changes](https://docs.metamask.io/guide/provider-migration.html#table-of-contents) in metamask provier API in January of 2021.
 
 This project is created using [NodeJS](https://nodejs.org/) running on [Express server](https://expressjs.com/) and using [hbs](https://www.npmjs.com/package/hbs) template engine.
