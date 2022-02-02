@@ -42,5 +42,13 @@ button {
 }
 
 .btn btn-lg btn-info btn-block {
-    color: #3868cd;
+    background: #34D1C9;
+}
+
+btn-primary {
+    background: #34D1C9;
+}
+
+btn-primary:hover {
+    background: #106964;
 }
