@@ -1,10 +1,8 @@
 # <img src='public/images/icon/logo.png' width=120px height=120px>
 
-Use the Celo Blockchain as a digital signature to authenticate documents, anyone with the original document can validate it and add its signature. Just connect to our D-app and be your own notary. [break changes](https://docs.metamask.io/guide/provider-migration.html#table-of-contents) in metamask provier API in January of 2021.
+Use the Blockchain as a digital signature to authenticate documents, anyone with the original document can validate it and add its signature. Just connect to our D-app and be your own notary. [break changes](https://docs.metamask.io/guide/provider-migration.html#table-of-contents) in metamask provier API in January of 2021.
 
-This project is created using [NodeJS](https://nodejs.org/) running on [Express server](https://expressjs.com/) and using [hbs](https://www.npmjs.com/package/hbs) template engine.
-
-Using [Ethers.JS](https://docs.ethers.io/) library for the dapp connection with metamask wallet. 
+This project is created using [NodeJS](https://nodejs.org/) running on [Express server](https://expressjs.com/) and using [hbs](https://www.npmjs.com/package/hbs) template engine. Using [Ethers.JS](https://docs.ethers.io/) library for the dapp connection with metamask wallet. 
 
 ## Prerequisite
 * NodeJS installed on system
