@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.0;
 
-contract CertiBits{  // defino que mi contrato se va a llamar Inbox
+contract Certi{ 
 
-    uint public totalCertiBits;   // variable donde se almacena la información
+    uint public totalCertificates;
     address owner;
     mapping (string => address[]) public hash2addressList;
     mapping (address => mapping(string => bool)) public address2hashstate;
 
-    constructor () {  // este es el metodo constructor donde     inicializo el contrato con un mensaje
+    constructor () { 
         owner = msg.sender;
     }
     
@@ -50,7 +50,7 @@ contract CertiBits{  // defino que mi contrato se va a llamar Inbox
         saldo[msg.sender]-=1;
         address2hashstate[msg.sender][_hash]=true;
         hash2addressList[_hash].push(msg.sender);
-        totalCertiBits++;
+        totalCertificates++;
     }
     
     function recargar() public payable {
@@ -70,6 +70,5 @@ contract CertiBits{  // defino que mi contrato se va a llamar Inbox
     function claimProfit(address payable _receiver) public payable onlyOwner {
         
         _receiver.transfer(address(this).balance);
-
     }
 }
