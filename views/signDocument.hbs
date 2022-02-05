@@ -120,13 +120,18 @@
             <header class="header-desktop">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
-                        <div class="header-wrap">
+                        <div class="d-flex flex-row">
+                            <div class="header-wrap">
                             <form class="form-header" action="" method="POST">
                                 <input class="au-input au-input--xl" type="text" name="search" placeholder="Validate by hash...Soon" />
-                                <button class="au-btn--submit" type="submit">
+                                <button class="au-btn--submit" style="color:#34D1C9" type="submit">
                                     <i class="zmdi zmdi-search"></i>
                                 </button>
                             </form>
+                            <div class="px-5 py-5">
+                                <p id="maticBalance">Matic Balance</p>
+                                <p id="signBalance">Signatures Balance</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -201,6 +206,11 @@
                             <div class="col-md-12">
                                 <div class="copyright">
                                     <p>Copyright © 2022 Certi. All rights reserved.</a></p>
+                                    <br>
+                                     <a class="logo" href="https://mumbai.polygonscan.com/address/0x5FE831af8A790e73D93f4116a7Cc182c8a5C53E6" target="_blank">
+                                     <img src="images/icon/polygon.png" align="right" height="55" width="50" alt="Certi" style="display:none" />
+                                     <img src="images/icon/polygon.png" align="right" height="55" width="50" alt="Certi" />
+                                     </a>
                                 </div>
                             </div>
                         </div>
@@ -274,6 +284,7 @@
     <script src="vendor/select2/select2.min.js"></script>
 
     <!-- Main JS-->
+    <script type="module" src="/js/readBalance.js"></script>
     <script src="/js/main.js"></script>
     <script src="js/contractData.js"></script>
     {{!-- <script src="/js/bundle.js"></script> --}}

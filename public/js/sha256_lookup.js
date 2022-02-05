@@ -25,7 +25,7 @@ document.forms['filehash'].elements['myfilehash'].onchange = function(evt) {
         filecontent = evt.target.result;
         console.log("Archivo Leido:" + filecontent);
         fileHashOutput = CryptoJS.SHA256(filecontent);
-        document.getElementById("file_hash").innerHTML = 'CertiBits - Hash: ' + fileHashOutput;
+        document.getElementById("file_hash").innerHTML = 'Certi - Hash: ' + fileHashOutput;
         console.log("Hash:" + fileHashOutput);
         // read_blockchain(document.getElementById("file_hash").innerHTML);
     };

@@ -62,7 +62,7 @@ firmarButton.addEventListener('click', async(e) => {
 
     const contract = new ethers.Contract(contractAddress, abi, signer);
 
-    let result = lastHash.slice(18, 82);
+    let result = lastHash.slice(13, 82);
 
     console.log("El hash a  publicar es :" + result);
 
@@ -74,7 +74,7 @@ firmarButton.addEventListener('click', async(e) => {
         if (receipt) {
             Swal.fire(
                 'Document Signed!',
-                'You have signed your document, and the hash document with your sign was uploaded to the Celo Blockchain!',
+                'You have signed your document, and the hash document with your sign was uploaded to the MATIC Blockchain!',
                 'success'
             );
 

@@ -55,7 +55,7 @@ contract Certi{
     
     function recharge() public payable {
         require(address2state[msg.sender],"Address not subscribed to the contract");
-        require(msg.value>=1e18,"The value must be at least 1 Celo");
+        require(msg.value>=1e18,"The value must be at least 1 MATIC");
         if( msg.value>=1e18 && msg.value<2e18 ){
             saldo[msg.sender]+=10;
         }

@@ -73,7 +73,7 @@ signButton.addEventListener('click', async(e) => {
     // const tx = await contract.nuevo_usuario(names, identification, email, signer.getAddress());
 
     try {
-        const tx = await contract.nuevo_usuario(names, identification, email, signer.getAddress());
+        const tx = await contract.new_user(names, identification, email, signer.getAddress());
 
         const receipt = await tx.wait();
 

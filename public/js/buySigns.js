@@ -63,7 +63,7 @@ buy_one.addEventListener('click', async(e) => {
     // let ethereum = window.ethereum;
 
     try {
-        const tx = await contract.recargar({ value: ethers.utils.parseEther('1'), });
+        const tx = await contract.recharge({ value: ethers.utils.parseEther('1'), });
 
         const receipt = await tx.wait();
 
@@ -126,7 +126,7 @@ buy_two.addEventListener('click', async(e) => {
     // let ethereum = window.ethereum;
 
     try {
-        const tx = await contract.recargar({ value: ethers.utils.parseEther('2'), });
+        const tx = await contract.recharge({ value: ethers.utils.parseEther('2'), });
 
         const receipt = await tx.wait();
 
@@ -195,7 +195,7 @@ buy_three.addEventListener('click', async(e) => {
     // let ethereum = window.ethereum;
 
     try {
-        const tx = await contract.recargar({ value: ethers.utils.parseEther('3'), });
+        const tx = await contract.recharge({ value: ethers.utils.parseEther('3'), });
 
         const receipt = await tx.wait();
 

@@ -71,7 +71,7 @@ consultDataButton.addEventListener('click', async(e) => {
 
     // let ethereum = window.ethereum;
 
-    let result = lastHash.slice(18, 82);
+    let result = lastHash.slice(13, 82);
 
     hashState.innerHTML = result;
 
@@ -79,7 +79,7 @@ consultDataButton.addEventListener('click', async(e) => {
 
     const docfirmado = await contract.address2hashstate(signer.getAddress(), result);
 
-    const totalCertificates = await contract.totalCertiBits();
+    const totalCertificates = await contract.totalCertificates();
 
     responseBlock.style.display = 'block';
     console.log("El saldo es:" + saldo);
