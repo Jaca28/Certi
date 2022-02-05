@@ -1,7 +1,6 @@
 var abi;
 var contractAddress;
 
-
 abi = [{
         "inputs": [],
         "stateMutability": "nonpayable",
@@ -89,7 +88,7 @@ abi = [{
     {
         "inputs": [{
                 "internalType": "string",
-                "name": "_nombre",
+                "name": "_name",
                 "type": "string"
             },
             {
@@ -108,7 +107,7 @@ abi = [{
                 "type": "address"
             }
         ],
-        "name": "nuevo_usuario",
+        "name": "new_user",
         "outputs": [],
         "stateMutability": "nonpayable",
         "type": "function"
@@ -130,7 +129,7 @@ abi = [{
     },
     {
         "inputs": [],
-        "name": "recargar",
+        "name": "recharge",
         "outputs": [],
         "stateMutability": "payable",
         "type": "function"
@@ -152,7 +151,7 @@ abi = [{
     },
     {
         "inputs": [],
-        "name": "totalCertiBits",
+        "name": "totalCertificates",
         "outputs": [{
             "internalType": "uint256",
             "name": "",
@@ -167,15 +166,15 @@ abi = [{
             "name": "",
             "type": "uint256"
         }],
-        "name": "usuarios",
+        "name": "users",
         "outputs": [{
                 "internalType": "uint256",
-                "name": "IDusuario",
+                "name": "userID",
                 "type": "uint256"
             },
             {
                 "internalType": "string",
-                "name": "nombre",
+                "name": "name",
                 "type": "string"
             },
             {
@@ -199,4 +198,4 @@ abi = [{
     }
 ];
 
-contractAddress = '0x2E05245f40C774711296c2317E673b8939B19469';
+contractAddress = '0x5FE831af8A790e73D93f4116a7Cc182c8a5C53E6';

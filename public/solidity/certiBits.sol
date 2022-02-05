@@ -23,21 +23,21 @@ contract Certi{
         _;
     }
     
-    struct usuario {
-        uint IDusuario;
-        string nombre;
+    struct user {
+        uint userID;
+        string name;
         string nit;
         string email;
         address owner;
     }
-    usuario[] public usuarios;
+    user[] public users;
     mapping (address => uint) public pubkey2IDu;
     mapping (address => bool) public address2state;
     mapping (address => uint) public saldo;
     
-    function nuevo_usuario(string memory _nombre, string memory _nit, string memory _email, address _owner) public {
+    function new_user(string memory _name, string memory _nit, string memory _email, address _owner) public {
         require(address2state[msg.sender]==false,"This Address is already subscribed to the contract");
-        usuarios.push(usuario(IDu,_nombre,_nit,_email,_owner));
+        users.push(user(IDu,_name,_nit,_email,_owner));
         pubkey2IDu[msg.sender]=IDu;
         IDu+=1;
         address2state[msg.sender]=true;
@@ -53,7 +53,7 @@ contract Certi{
         totalCertificates++;
     }
     
-    function recargar() public payable {
+    function recharge() public payable {
         require(address2state[msg.sender],"Address not subscribed to the contract");
         require(msg.value>=1e18,"The value must be at least 1 Celo");
         if( msg.value>=1e18 && msg.value<2e18 ){
