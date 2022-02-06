@@ -74,7 +74,7 @@ firmarButton.addEventListener('click', async(e) => {
         if (receipt) {
             Swal.fire(
                 'Document Signed!',
-                'You have signed your document, and the hash document with your sign was uploaded to the MATIC Blockchain!',
+                'You have signed your document, and the hash document with your sign was uploaded to the Polygon Blockchain!',
                 'success'
             );
 
